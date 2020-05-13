@@ -3,6 +3,8 @@
 
 To process a machine learning model on a microcontroller it needs to be small and fast. Tensor flow processes numbers not words so the first thing to do is to convert the data input into an array of numbers. Conventionally this is done with a big lookup table where each word is mapped to a number. I realised on a microcontroller such as the SAMD21 Cortex-M0+ 32bit low power ARM MCU used in my target board would not be able to store that table as well as rest of the code and machine learning model.
 
+So my thought was to try with a hash function that could be easily reproduced on both the Python training environment and over on the Arduino MKR Zero.
+
 ![Machine Learning Text Classification](https://github.com/Workshopshed/TinyMLTextClassification/blob/master/Machine%20Learning%20Text%20Classification.png "Text Classification Pipeline")
 
 ## Tokenisation using a hash function
