@@ -9,7 +9,7 @@ So my thought was to try with a hash function that could be easily reproduced on
 
 ## Tokenisation using a hash function
 
-My first challenge was to hook up a fast hash function to [TensorFlow TextEncoder](https://www.tensorflow.org/tutorials/tensorflow_text/intro) so that the words were encoded without that need for the lookup table.
+My first challenge was to hook up a fast hash function to [TensorFlow TextEncoder](https://www.tensorflow.org/tutorials/tensorflow_text/intro) so that the words were encoded without that need for the lookup table. I used the [Super Fast Hash](http://www.azillionmonkeys.com/qed/hash.html) by Paul Hsieh which has ports for Python and C.
 
 ## Shrinking the model
 
