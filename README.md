@@ -20,3 +20,7 @@ For the model there do seem to be some slightly different approaches to building
 I've been using tinymlgen to export the model but I may need to dig into that and produce my own variation with more optimisations. You can follow the build process using the Juypter notebook.
 
 [Machine Learning Notebook](https://github.com/Workshopshed/TinyMLTextClassification/blob/master/text_classification_rnn_withCustomEncoder.ipynb)
+
+## Problems running the model
+
+Still a key outstaning issue is that this text classifier is failing to load onto the Arduino MKR board. I think the issue is that it is too big to run in memory.
