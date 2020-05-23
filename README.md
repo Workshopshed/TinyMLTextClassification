@@ -24,3 +24,44 @@ I've been using tinymlgen to export the model but I may need to dig into that an
 ## Problems running the model
 
 Still a key outstaning issue is that this text classifier is failing to load onto the Arduino MKR board. I think the issue is that it is too big to run in memory.
+
+## Optimisation
+
+Did some experiments with the optimisations.
+
+```
+optimizers = [tf.lite.Optimize.DEFAULT]
+converter.target_spec.supported_types = [tf.float16]
+```
+
+results in 
+
+```
+Initialising...
+Type FLOAT16 (10) not is not supported
+Failed to initialize tensor 1
+MicroAllocator: Failed to initialize.
+AllocateTensors() failed
+```
+
+Tried also:
+
+```
+# From TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power
+def representative_dataset_gen():
+    for value in test_dataset:
+        yield np.array(value,dtype=np.dtype((np.float32,8)),ndmin=2)
+
+...
+
+optimizers = [tf.lite.Optimize.OPTIMIZE_FOR_SIZE]
+converter.representative_dataset = representative_dataset_gen
+converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
+converter.inference_input_type = tf.uint8
+converter.inference_output_type = tf.uint8
+```
+but could not work out how to get a generator to produce data in the right way
+
+## New Model
+
+A simpler model was created using the raw USB data rather than text. This avoids the issues of encoding and allows for simpler models to be tried.
