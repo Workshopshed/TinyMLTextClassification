@@ -65,3 +65,5 @@ but could not work out how to get a generator to produce data in the right way
 ## New Model
 
 A simpler model was created using the raw USB data rather than text. This avoids the issues of encoding and allows for simpler models to be tried.
+
+Run in Google Colab : https://colab.research.google.com/github/Workshopshed/TinyMLTextClassification/blob/master/key_classification_rnn.ipynb
