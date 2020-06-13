@@ -62,8 +62,14 @@ converter.inference_output_type = tf.uint8
 ```
 but could not work out how to get a generator to produce data in the right way
 
-## New Model
+## Simpler Model
 
 A simpler model was created using the raw USB data rather than text. This avoids the issues of encoding and allows for simpler models to be tried.
 
 Run in Google Colab : https://colab.research.google.com/github/Workshopshed/TinyMLTextClassification/blob/master/key_classification_rnn.ipynb
+
+## Classifying workds
+
+Based on the work done using the simple model that has allowed me to redefine the more complex case.
+
+Run in Google Colab : https://colab.research.google.com/github/Workshopshed/TinyMLTextClassification/blob/master/text_classification_rnn_withCustomEncoder.ipynb
