@@ -68,7 +68,7 @@ A simpler model was created using the raw USB data rather than text. This avoids
 
 Run in Google Colab : https://colab.research.google.com/github/Workshopshed/TinyMLTextClassification/blob/master/key_classification_rnn.ipynb
 
-## Classifying workds
+## Classifying words
 
 Based on the work done using the simple model that has allowed me to redefine the more complex case.
 
