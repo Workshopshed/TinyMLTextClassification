@@ -73,3 +73,13 @@ Run in Google Colab : https://colab.research.google.com/github/Workshopshed/Tiny
 Based on the work done using the simple model that has allowed me to redefine the more complex case.
 
 Run in Google Colab : https://colab.research.google.com/github/Workshopshed/TinyMLTextClassification/blob/master/text_classification_rnn_withCustomEncoder.ipynb
+
+## Further Reading
+
+There's been quite a lot of research into classifying comments and the data and machine learning site Kaggle even had a competition looking into this.
+
+https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/overview
+https://www.aclweb.org/anthology/W18-5105/
+https://github.com/iampukar/toxic-comments-classification
+https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports/6837517.pdf
+
