@@ -76,10 +76,10 @@ Run in Google Colab : https://colab.research.google.com/github/Workshopshed/Tiny
 
 ## Further Reading
 
-There's been quite a lot of research into classifying comments and the data and machine learning site Kaggle even had a competition looking into this.
-
-https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/overview
-https://www.aclweb.org/anthology/W18-5105/
-https://github.com/iampukar/toxic-comments-classification
-https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports/6837517.pdf
+There's been quite a lot of research into classifying comments and the data and machine learning site Kaggle even had a competition looking into this. So if you are interested in the machine learning aspect you might be better looking at their work than mine.
+ 
+* https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/overview
+* https://www.aclweb.org/anthology/W18-5105/
+* https://github.com/iampukar/toxic-comments-classification
+* https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/reports/6837517.pdf
 
